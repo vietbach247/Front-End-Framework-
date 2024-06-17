@@ -1,0 +1,24 @@
+<form (ngSubmit)="handleSubmit()" [formGroup]="authForm">
+  <h1>Login</h1>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" formControlName="email" />
+    <span
+      *ngIf="authForm.get('email')?.touched && authForm.get('email')?.errors"
+      >Email không được để trống</span
+    >
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" />
+    <span
+      *ngIf="
+        authForm.get('password')?.touched && authForm.get('password')?.errors
+      "
+      >Password không được để trống</span
+    >
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

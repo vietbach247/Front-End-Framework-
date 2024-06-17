@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "name": "bach1111",
+      "image": "bachaaaaa",
+      "quantity": 3,
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "",
+      "image": "",
+      "quantity": 0,
+      "active": false,
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "1111@gmail.com",
+      "password": "$2a$10$y8RCa7o/MtLFmqLMSLyGSui7fXyro5rfBYB1Vobqzqqvp8ewXsOr.",
+      "id": 1
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "$2a$10$raoq2zTHZDVWamVry9QhuubeMRuZCrT.dymjx5YT9M4a5B/OlVuE.",
+      "id": 2
+    }
+  ]
+}

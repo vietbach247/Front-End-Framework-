@@ -1,0 +1,41 @@
+<form (ngSubmit)="handleSubmit()" [formGroup]="productForm">
+  <h1>Add Product</h1>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" />
+    <span
+      *ngIf="
+        productForm.get('name')?.touched && productForm.get('name')?.errors
+      "
+      >Name không được để trống</span
+    >
+  </div>
+
+  <div>
+    <label for="image">Image</label>
+    <input type="text" formControlName="image" />
+    <span
+      *ngIf="
+        productForm.get('image')?.touched && productForm.get('image')?.errors
+      "
+      >Image không được để trống</span
+    >
+  </div>
+
+  <div>
+    <label for="quantity">Quantity</label>
+    <input type="number" formControlName="quantity" />
+    <span
+      *ngIf="
+        productForm.get('quantity')?.touched &&
+        productForm.get('quantity')?.errors
+      "
+      >Quantity không được để trống</span
+    >
+  </div>
+  <div>
+    <label for="">Active</label>
+    <input type="checkbox" formControlName="active" />
+  </div>
+  <button type="submit">Submit</button>
+</form>
